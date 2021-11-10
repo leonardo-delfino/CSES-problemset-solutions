@@ -50,12 +50,17 @@ bool ckmin(T &a, const T &b) { return b < a ? a = b, 1 : 0; }
 template<class T>
 bool ckmax(T &a, const T &b) { return a < b ? a = b, 1 : 0; }
 
-int nxt() {int x; cin >> x; return x;}
-
-ll llnxt() {ll x; cin >> x; return x;}
-
 // mt19937 rnd(239);
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+template <class ...As> auto &read(As &...as) { return (cin >> ... >> as); }
+template <class T> auto &operator>>(istream &is, vector<T> &xs) {
+    for (auto &x : xs) is >> x;
+    return is;
+}
+ 
+#define READ(...)             __VA_ARGS__; read(__VA_ARGS__)
+#define READ_CTOR(name, ...)  name(__VA_ARGS__); cin >> name
 
 void __print(int x) {cerr << x;}
 void __print(long x) {cerr << x;}
