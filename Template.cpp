@@ -102,12 +102,12 @@ void solve() {
 int32_t main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
-	int T = 1;
-	// cin >> T;
-	while (T--) {
-		// cout << "Case #" << t << ": ";
-		solve();
-	}
+    int T = 1;
+    // cin >> T;
+    while (T--) {
+        // cout << "Case #" << t << ": ";
+        solve();
+    }
 #ifdef DEBUG
     cerr << endl << "finished in " << clock() * 1.0 / CLOCKS_PER_SEC << " sec" << endl;
 #endif
