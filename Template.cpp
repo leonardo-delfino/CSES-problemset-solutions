@@ -58,7 +58,6 @@ template <class T> auto &operator>>(istream &is, vector<T> &xs) {
     for (auto &x : xs) is >> x;
     return is;
 }
- 
 #define READ(...)             __VA_ARGS__; read(__VA_ARGS__)
 #define READ_CTOR(name, ...)  name(__VA_ARGS__); cin >> name
 
